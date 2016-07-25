@@ -23,12 +23,6 @@
                 $query = "SELECT * FROM categories";
                 $select_all_cat_query = mysqli_query($connection, $query);
 
-                if(!$select_all_cat_query){
-
-                    echo "An error has occurred" . mysqli_error();
-
-                }
-
 
                 while($row = mysqli_fetch_assoc($select_all_cat_query)){
 
@@ -43,7 +37,7 @@
                 ?>
 
                 <li>
-                    <a href="admin">Admin</a>
+                    <a href=<?php echo site_url('admin/index'); ?>>Admin</a>
                 </li>
 
 

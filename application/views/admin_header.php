@@ -1,3 +1,8 @@
+<?php ob_start(); ?>
+<?php include "db.php" ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,13 +14,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+    <title>BLOG ME Admin</title>
 
     <!-- Bootstrap Core CSS -->
-    <?php echo link_tag('assets/css/bootstrap.css');?>
+    <?php echo link_tag('assets/css/bootstrap.min.css');?>
 
     <!-- Custom CSS -->
-    <?php echo link_tag('assets/css/blog-home.css');?>
+    <?php echo link_tag('assets/css/custom.css');?>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

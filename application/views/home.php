@@ -15,7 +15,10 @@ include 'header.php';
 // Navigation
 
 include 'navigation.php';
-  
+
+
+
+
 
 
 ?>
@@ -96,7 +99,7 @@ include 'navigation.php';
 
         <!-- Blog Sidebar Widgets Column -->
 
-        <?php // include 'includes/sidebar.php'; ?>
+        <?php  include 'sidebar.php'; ?>
 
     </div>
     <!-- /.row -->
@@ -105,4 +108,4 @@ include 'navigation.php';
 
     <!--Footer -->
 
-<?php // include "includes/footer.php"; ?>
+<?php include "footer.php"; ?>
