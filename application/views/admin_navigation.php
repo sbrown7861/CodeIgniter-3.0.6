@@ -38,18 +38,14 @@
             <li>
                 <a href="admin_home.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
             </li>
-
             <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#post_dropdown"><i class="fa fa-fw fa-arrows-v"></i> POSTS <i class="fa fa-fw fa-caret-down"></i></a>
-                <ul id="post_dropdown" class="collapse">
-                    <li>
-                        <a href=<?php echo site_url('admin/AdminViewAllPosts'); ?>>View All Posts</a>
-                    </li>
-                    <li>
-                        <a href="posts.php?source=add_posts">Add Post</a>
-                    </li>
-                </ul>
+                <a href=""><i class="fa fa-fw fa-dashboard"></i> VIEW ALL POSTS</a>
             </li>
+            <li>
+                <a href=""><i class="fa fa-fw fa-dashboard"></i> ADD POST</a>
+            </li>
+
+
 
             <li>
                 <a href="<?php echo site_url('admin/categories'); ?>"><i class="fa fa-fw fa-wrench"></i>CATEGORIES</a>
