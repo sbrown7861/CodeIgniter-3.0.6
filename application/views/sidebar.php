@@ -1,8 +1,6 @@
 
 <div class="col-md-4">
 
-
-
     <!-- Blog Search Form -->
     <div class="well">
         <h4>Blog Search</h4>

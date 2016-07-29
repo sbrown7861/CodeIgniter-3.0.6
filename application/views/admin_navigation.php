@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="admin_home.php">BLOG ME Admin</a>
+        <a class="navbar-brand" href="">BLOG ME Admin</a>
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
@@ -36,13 +36,13 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
             <li>
-                <a href="admin_home.php"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                <a href=""><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
             </li>
             <li>
-                <a href=""><i class="fa fa-fw fa-dashboard"></i> VIEW ALL POSTS</a>
+                <a href="<?php echo site_url('admin/view_all_posts'); ?>"><i class="fa fa-fw fa-dashboard"></i> VIEW ALL POSTS</a>
             </li>
             <li>
-                <a href=""><i class="fa fa-fw fa-dashboard"></i> ADD POST</a>
+                <a href="<?php echo site_url('admin/add_post'); ?>"><i class="fa fa-fw fa-dashboard"></i> ADD POST</a>
             </li>
 
 

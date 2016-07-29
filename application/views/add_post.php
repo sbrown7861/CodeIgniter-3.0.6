@@ -1,5 +1,39 @@
 <?php
 
+ob_start();
+
+include "admin_header.php" ?>
+
+<div id="wrapper">
+
+
+    <?php if(!$connection){
+
+        echo "A connection cannot be established.";
+
+
+    } ?>
+
+    <?php include "admin_navigation.php" ?>
+
+
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+
+
+                    <h1 class="page-header">
+                        Welcome Admin
+                        <small>Author:</small>
+                    </h1>
+
+
+                    <?php
+
 if(isset($_POST['create_post'])){
 
 
@@ -19,7 +53,7 @@ if(isset($_POST['create_post'])){
     $post_comment_count = '';
 
 
-    move_uploaded_file($post_image_temp, "../images/$post_image" );
+
 
 
     $query = "INSERT INTO posts(post_category_id, post_title, post_author, post_date, post_image, post_content,
@@ -34,7 +68,10 @@ post_tags, post_comment_count, post_status) ";
 
 
 
-    confirm_query($create_post_query);
+    if(!$create_post_query){
+
+        echo "The Query has failed " . mysqli_error($connection, $create_post_query);
+    }
 
 }
 
@@ -88,3 +125,17 @@ post_tags, post_comment_count, post_status) ";
     </div>
 
 </form>
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+    <!-- /#page-wrapper -->
+
+
+
+
+
+<?php include "admin_footer.php" ?>

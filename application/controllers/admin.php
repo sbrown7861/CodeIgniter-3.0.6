@@ -30,7 +30,7 @@ class Admin extends CI_Controller
 
         $this->load->helper('html');
 
-        $this->load->vivew('');
+        $this->load->view('view_all_posts');
 
     }
 
@@ -38,7 +38,9 @@ class Admin extends CI_Controller
 
         $this->load->helper('html');
 
-        $this->load->view('');
+        $this->load->library('upload');
+
+        $this->load->view('add_post');
 
 
     }

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Home - Start Bootstrap Template</title>
+    <title>BlOG ME HOME</title>
 
     <!-- Bootstrap Core CSS -->
     <?php echo link_tag('assets/css/bootstrap.css');?>
